@@ -1,10 +1,11 @@
 {
   "name": "recompose-build",
+  "version": "1.0.0",
   "private": true,
   "author": "Andrew Clark <acdlite@me.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/acdlite/recompose.git"
+    "url": "git@github.com:wix-playground/recompose.git"
   },
   "license": "MIT",
   "scripts": {
@@ -14,9 +15,8 @@
     "test:watch": "cross-env BABEL_ENV=cjs jest --watch",
     "release": "node scripts/release.js",
     "postinstall": "node scripts/installNestedPackageDeps.js",
-    "format": "prettier --semi false --trailing-comma es5 --single-quote --write 'scripts/*.js' 'src/packages/*/*.js' 'src/packages/*/!(node_modules)/**/*.js'",
-    "precommit": "lint-staged",
-    "prepush": "yarn test"
+    "format": "prettier --semi false --trailing-comma es5 --single-quote gut--write 'scripts/*.js' 'src/packages/*/*.js' 'src/packages/*/!(node_modules)/**/*.js'",
+    "precommit": "lint-staged"
   },
   "jest": {
     "testMatch": [
